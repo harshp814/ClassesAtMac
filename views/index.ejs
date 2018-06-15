@@ -1,0 +1,93 @@
+<% include partials/header %>
+
+<div class="container d-flex justify-content-center" id="form">
+    <form class="form-inline">
+        <select id="selectDpt" class="form-control mb-2 mr-sm-2" data-live-search="true">
+            <option disabled selected>Select a Department</option>
+        </select>
+        
+        <select id="weekDays" class="form-control mb-2 mr-sm-2 ">
+            <option disabled selected>Day</option>
+        </select>
+        
+        <input type="text" id="courseCode" class="form-control mb-2 mr-sm-2" placeholder="Course (eg: 2C03)">
+        
+        <label id="checkboxLabel" class="mr-sm-3 highlight" for="checkbox"><input type="checkbox" id="checkbox" checked>Current Term</label>
+        
+        <!--<div>-->
+        <input id="setTime" type="text" class="form-control mb-2 mr-sm-2" placeholder="Time">
+        <!--</div>-->
+        
+        <button id="searchBtn" type="button" class="btn form-control mb-2 mr-sm-2">Search</button>
+
+    </form>
+</div>
+
+<div class="container mt-sm-4" id="display">
+    <div class="row fix-gutters">
+        <div class="col-lg-4">
+            <div id="labelLecture"><label >LECTURES</label> <hr></div>
+            <div id="lecture">
+                <!--<div id="lectureCard">-->
+                <!--    <div style="margin-bottom:0.4em;" class="d-flex justify-content-between">-->
+                <!--        <div>ENGINEER 2B03 - C01</div><div>Winter</div>   -->
+                <!--    </div>-->
+                <!--    <p style="margin-bottom:0.4em;">Name: Engineering Economics</p> -->
+                    
+                <!--    <div class="row">-->
+                <!--        <div class="col">-->
+                <!--            <p>Day: Wednesday</p>-->
+                <!--            <p>Time: 19:00 - 22:00</p>-->
+                <!--        </div>-->
+                <!--        <div class="col">-->
+                <!--            <p>Room: BSB 147</p>-->
+                <!--            <p>Prof: Seyedmorteza Mirhoseininejad</p>-->
+                <!--        </div>  -->
+                <!--    </div>-->
+                <!--</div>-->
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div id="labelTutorial"><label >TUTORIALS</label> <hr></div>
+            <div id="tutorial">
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div id="labelLab"><label >LABS</label> <hr></div>
+            <div id="lab">
+                <!--<p>Harsh</p>-->
+                <!--<p></p>-->
+            </div>
+        </div>
+    </div>
+    
+    <!--<div id="frown">-->
+    <!--    <i class="fas fa-frown"></i>-->
+    <!--</div>-->
+    <!--<div id="error">-->
+    <!--    Please make sure the query you made matches the User Guide!!-->
+    <!--</div>-->
+</div>
+
+
+<script src="/js/main.js"></script>
+<script>
+    $('#setTime').timepicker({'minTime': '7:00', 'maxTime': '22:00', 'timeFormat': 'H:i', 'forceRoundTime': true});
+    $('#setTimeButton').on('click', function (){
+            $('#setTime').timepicker('setTime', new Date());
+    });
+
+    $("#courseCode").each(function () {
+        $(this).attr('size', $(this).attr('placeholder').length-3);
+        $(this).attr('maxlength',5);
+    });
+    
+    $("#setTime").each(function () {
+        $(this).attr('size', $(this).attr('placeholder').length-1);
+        $(this).attr('maxlength',5);
+    });
+</script>
+
+<% include partials/footer %>

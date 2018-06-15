@@ -1,0 +1,152 @@
+@media only screen and (max-device-width: 575px) {
+    .jumbotron .container p {
+        font-size: 1.1em;
+    }
+    #form label, #setTime {
+        margin-bottom: 0.4em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+body {
+    background-color: #CCCCCC;
+    /*background-color: #666666;*/
+    font-family: 'Raleway', sans-serif;
+}
+
+#container {
+    /*margin: 1.5rem auto;*/
+    background: #990033;
+    /*width: 55%;*/
+    font-family: 'Raleway', sans-serif;
+    margin-top: 3.5em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    color: #e6e6e6;
+    border-radius: 0.8em;
+    /*display: table;*/
+    /*margin: 0 auto;*/
+}
+
+#container h1 {
+    font-weight: 600;
+}
+
+#timetableImg {
+    width: 0.8em; 
+    height: 0.8em; 
+    /*margin-right: 0.4em;*/
+    vertical-align: baseline;
+    margin: 0 0.5em 0 0;
+}
+
+#userGuide {
+    margin-top: 0.8rem;
+    font-weight: 700;
+}
+
+p {
+    margin: 0;
+}
+
+#copyrights {
+    font-size: 0.7em;
+}
+
+#selectDpt, #weekDays, #courseCode, #setTime {
+    /*color: black;*/
+    border: solid 2px #990033;
+}
+
+#setTime {
+    width: auto;  
+}
+
+.form-control:focus {
+  /*border-color: #FF0000;*/
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 16px rgba(153,0,51, 0.6);
+}
+
+#checkbox {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    margin-right: 6px;
+}
+
+#checkboxLabel {
+    font-size: 1.15em;
+}
+
+input[type="checkbox"] + label {
+    color: #666666;
+}
+
+.highlight {
+    color: #990033;
+    font-weight: 600;
+}
+
+#searchBtn {
+    background-color: #990033;
+    color: #e6e6e6;
+    border: solid 2px #990033;
+}
+
+
+#labelLecture, #labelTutorial, #labelLab {
+    margin: 0;
+    margin-bottom: 3px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+hr {
+    margin-top: 0;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+#lectureCard {
+    background-color: #003399;
+}
+
+#tutorialCard {
+    background-color: #cc9900;
+}
+
+#labCard {
+    background-color: #990033;
+}
+
+
+#lectureCard, #tutorialCard, #labCard {
+    margin-bottom: .65em;
+    color: #e6e6e6;
+    padding: 0.75em;
+    border-radius: 8px;
+}
+
+#frown {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 6.5em;
+    color: #666666;
+}
+
+#error {
+    margin-top: 0.3rem;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.fix-gutters > [class^="col"],
+.fix-gutters > [class*=" col"] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
