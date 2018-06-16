@@ -19,7 +19,7 @@ router.get("/", function (req, res) {
    res.render("index"); 
 });
 
-fetch('https://www.timetablegenerator.io/api/v2/school/mcmaster')
+fetch('#####API_LINK#####')
     .then(res => res.json())
     .then((body) => {
         makeCourse(body);
