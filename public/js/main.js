@@ -34,7 +34,7 @@ function populateDpts() {
 
 //Populate the drop down menu for days
 function populateDays() {
-    for (var i = 1; i < weekdays.length; i++) {
+    for (var i = 1; i < weekdays.length - 1; i++) {
         $('#weekDays').append($('<option>', {
             value: i,
             text: weekdays[i]
