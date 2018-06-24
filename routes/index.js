@@ -19,7 +19,7 @@ router.get("/", function (req, res) {
    res.render("index"); 
 });
 
-fetch('#####API_LINK#####')
+fetch('https://www.timetablegenerator.io/api/v2/school/mcmaster')
     .then(res => res.json())
     .then((body) => {
         makeCourse(body);
@@ -91,9 +91,7 @@ function makeCourse(data) {
                                 // term = term == 5 ? term = 2 : term = Math.floor(term/2);
                                 // term = term == 1 ? term = "Fall" : term == 2 ? term = "Winter" : "Summer";
                                 var credits = crs["credits"];
-                                console.log(credits);
                                 var section_full = sec[n]["section_full"];
-                                console.log(section_full)
                                 var eachCrs = new course.course(code, name, dpt, section, start, day, end, room, prof, term, credits, section_full);
                                 courses.push(eachCrs);
                             }
