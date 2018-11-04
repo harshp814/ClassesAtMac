@@ -1,5 +1,5 @@
 # Classes at Mac
-Classes at Mac gives you a list of classes that are running at McMaster University. <a href="http://www.classesatmac.com/" target="_blank">Click here</a> to checkout the website live. 
+Classes at Mac gives you a list of classes that are running at McMaster University. <a href="https://classesatmac.herokuapp.com/" target="_blank">Click here</a> to checkout the website live. 
 
 <img src="ClassesAtMac.JPG"/> 
 
